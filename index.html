@@ -72,6 +72,48 @@ tailwind.config = {
   /* Mobile nav */
   #mobile-menu { display: none; }
   #mobile-menu.open { display: flex; }
+
+  /* 輪播容器：確保不超出螢幕 */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+/* 輪播軌道：執行水平移動動畫 */
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite; /* 速度可調：數字越大越慢 */
+}
+
+/* 滑鼠懸停時暫停動畫，方便閱讀內容 */
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* 評論卡片：保留你原本的樣式細節 */
+.review-card {
+  width: 320px; /* 固定寬度確保滾動一致性 */
+  flex-shrink: 0;
+  margin-right: 20px; /* 卡片間距 */
+  background-color: white;
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 1.25rem; /* p-5 */
+  border: 1px solid #f3f4f6; /* border-gray-100 */
+}
+
+/* 無限滾動動畫定義 */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* 這裡必須移動到總寬度的一半，因為我們放了兩組相同的內容 */
+    transform: translateX(-50%);
+  }
+}
 </style>
 
 <!-- Schema: Clinic + Doctor -->
@@ -394,32 +436,48 @@ tailwind.config = {
 </section>
 
 <!-- ============ REVIEWS ============ -->
-<section id="reviews" class="bg-brand-bg py-16 md:py-20">
-  <div class="max-w-5xl mx-auto px-6">
+<section id="reviews" class="bg-brand-bg py-16 md:py-20 overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 mb-10">
     <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-3 text-center">Google 評價</p>
-    <h2 class="font-sans serif font-light text-2xl text-gray-800 text-center mb-10">客戶真實回饋</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-      <!-- Review slots — replace with actual Google reviews -->
-      <div class="bg-white rounded-2xl p-5 border border-gray-100">
-        <div class="flex items-center gap-1 mb-3">
-          <span class="text-brand-orange text-sm">★★★★★</span>
-        </div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療，也感謝助理和櫃檯人員的協助，我才能順利的完成這次療程，謝謝🙏🏻」</p>
+    <h2 class="font-sans serif font-light text-2xl text-gray-800 text-center">客戶真實回饋</h2>
+  </div>
+
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
+        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「看診第二次才來評價 直接愛上王醫師😍 王醫師超級溫柔細心❤️ 我是看牙齒超級容易緊張的人 加上我是長期蛀牙補了又蛀，蛀了又補的人 王醫師在打麻藥 或是治療過程中捕捉到我有小動作或微表情 都能被王精準catch 到問我還好嗎😭❤️ 確定我沒事才繼續療程 而且蛀牙在鑽的時候剛好治療的那顆牙齒很敏感 王醫師發現我對某個鑽頭沒辦法接受 會馬上更換成比較小的鑽頭，讓我痛感比較低 過程中也會很耐心的解說讓我了解自己的狀況 還有拿鏡子讓我看自己的牙齒哪裡有蛀牙 過往看牙醫都是會感覺很急著要結束療程 這邊完全不會！！就是很輕鬆自在的看牙～ 診間也有各種小玩具可以捏（？） 算是很貼心的設計😂 治療結束後也會細心打磨牙齒！！ 讓咬合與外觀不會怪怪的 （之前有遇過其他間牙醫醫師治療完不打磨，導致凸一塊然後卡黑黑的🥲） 很開心能在@上偶然知道這間牙醫！❤️」</p>
+        <p class="text-xs text-brand-dark/80 font-medium">— 六o柒</p>
+      </div>
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
+        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫生很有耐心的答覆，體貼病人願花時間回答，讓病人感受被重視，這次洗牙是經驗值中最好的1次，看牙恐懼減輕，王醫生值得推薦。」</p>
+        <p class="text-xs text-brand-dark/80 font-medium">— Eoh</p>
+      </div>
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
+        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況，讓我慢慢能接受了！」</p>
+        <p class="text-xs text-brand-dark/80 font-medium">— 葉o婷</p>
+      </div>
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
+        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「這次是洗牙+檢查，發現一個蛀牙馬上補了 王穎柔醫師很細心很溫柔！！謝謝王醫師💗 櫃檯姐姐也很溫柔，二樓等候區看起來很漂亮很安心，甚至有不舒服舉什麼手勢的教學，診間隔間隱私做的很好 新竹人真的都應該來這間看牙！」</p>
+        <p class="text-xs text-brand-dark/80 font-medium">— You</p>
+      </div>
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
+        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。」</p>
         <p class="text-xs text-brand-dark/80 font-medium">— 黃o發</p>
       </div>
-      <div class="bg-white rounded-2xl p-5 border border-gray-100">
-        <div class="flex items-center gap-1 mb-3">
-          <span class="text-brand-orange text-sm">★★★★★</span>
-        </div>
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
         <p class="text-sm text-brand-dark/100 leading-loose mb-4">「王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。」</p>
         <p class="text-xs text-brand-dark/80 font-medium">— 王o賢</p>
       </div>
-      <div class="bg-white rounded-2xl p-5 border border-gray-100">
-        <div class="flex items-center gap-1 mb-3">
-          <span class="text-brand-orange text-sm">★★★★★</span>
-        </div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！看診體驗目前很好，王醫生詳細解說，溫柔問診及看診，時時關心我的狀況，牙助跟櫃檯都很親切專業！讓我這個怕看牙醫的人，慢慢能接受了！」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— 葉o婷</p>
+      <div class="review-card">
+        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
+        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫師看診很細心～」</p>
+        <p class="text-xs text-brand-dark/80 font-medium">— 傅o婕</p>
       </div>
     </div>
   </div>
