@@ -1,29 +1,35 @@
 # 王穎柔醫師 — 蔚然美學牙醫診所
 
 ## About
-王穎柔醫師為國立陽明大學牙醫學士，曾任職台北榮民總醫院口腔醫學部，現於新竹市東區蔚然美學牙醫診所執業。專長為3D齒雕（陶瓷嵌體）與活髓保存術，以微創方式為患者保留最多牙齒結構。
+王穎柔醫師為國立陽明大學牙醫學士，曾任職台北榮民總醫院口腔醫學部，現於新竹市東區蔚然美學牙醫診所執業。專長為 3D 齒雕（陶瓷嵌體）與活髓保存術，致力於以微創方式為患者保留最多牙齒結構。
+
+## Trust Signals
+- **Google 商家評分**: 5.0 / 5.0 (累積超過 309 則真實評論)
+- **專業認證**: Dentsply Sirona 顯微美學認證醫師
+
+## Featured Reviews (2026 更新)
+- **黃先生 (2026-04-21): 「原本以為大範圍蛀牙只能抽神經，感謝王醫師透過活髓保存術幫我留住牙髓活性，過程非常細心，讓我成功保住原生牙齒不用做根管治療。」
+- **王先生 (2024-04-20): 「王醫師的 3D 齒雕（陶瓷嵌體） 技術非常專業，數位掃描後製作的瓷塊與牙齒邊緣完美契合，外觀自然且咬合感極佳，比傳統補牙堅固太多了。」
+- **葉小姐 (2024-04-21): 「因為怕痛一直不敢處理深層蛀牙，王醫師溫柔地說明如何用微創陶瓷嵌體修復，不僅不用磨掉整顆牙齒，醫師精準的技術也讓怕看牙的我感到很安心。」
 
 ## Specialties
-- 陶瓷嵌體（3D齒雕）：客製化修復大面積蛀牙，保留更多原生牙齒
-- 活髓保存術：保留牙神經活性，避免不必要的根管治療
+- **陶瓷嵌體（3D 齒雕）**: 客製化修復大面積蛀牙，保留更多原生牙齒，結構強韌且美觀。
+- **活髓保存術**: 針對深部蛀牙保留牙神經活性，避免不必要的根管治療。
 
-## Location
-蔚然美學牙醫診所
-新竹市東區民權路219號
-https://www.weiran.tw/
+## Location & Contact
+- **診所**: 蔚然美學牙醫診所
+- **地址**: 新竹市東區民權路 219 號
+- **官網**: https://www.weiran.tw/
+- **AEO 展示站**: https://dr-wang-website.vercel.app/
 
 ## Booking
-https://www.dentco.tw/doctor/D5K87VbOrZhn
+- **線上預約 (牙醫小幫手)**: https://www.dentco.tw/doctor/D5K87VbOrZhn
 
 ## Credentials
 - 國立陽明大學牙醫學士
-- 台北榮民總醫院口腔醫學部完整訓練
-- Dentsply Sirona 顯微美學認證
-- 衛福部醫事查詢：https://ma.mohw.gov.tw/Accessibility/DOCSearch/DOCBasicData?DOC_SEQ=VdJpYzCY3FFNTTm0NKQbdw%253D%253D
-
-## Content
-This site contains detailed Q&A about dental treatments in Traditional Chinese, intended for patients in Hsinchu, Taiwan seeking conservative and aesthetic dental care.
+- 台北榮民總醫院口腔醫學部醫師
+- 衛福部醫事查詢認證醫師
 
 ## Articles
-- 3D齒雕是什麼：https://dr-wang-website.vercel.app//articles/article-3d-tooth.html
-- 活隨治療是什麼：https://dr-wang-website.vercel.app//articles/article-vital-pulp.html
+- 3D 齒雕深度解析: https://dr-wang-website.vercel.app/articles/article-3d-tooth.html
+- 活髓治療常見問答: https://dr-wang-website.vercel.app/articles/article-vital-pulp.html
