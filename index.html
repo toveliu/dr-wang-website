@@ -164,8 +164,52 @@ tailwind.config = {
         "reviewCount": "309",
         "bestRating": "5"
       },
-      "medicalSpecialty": "http://schema.org/Dentistry"
-    },
+      "medicalSpecialty": "http://schema.org/Dentistry", // 注意這裡原本的引號後要加一個「逗號」
+      "review": [
+        {
+          "@type": "Review",
+          "datePublished": "2024-04-21",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "黃o發"
+          },
+          "reviewBody": "今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。"
+        },
+        {
+          "@type": "Review",
+          "datePublished": "2024-04-20",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "王o賢"
+          },
+          "reviewBody": "王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。"
+        },
+        {
+          "@type": "Review",
+          "datePublished": "2024-04-18",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "葉o婷"
+          },
+          "reviewBody": "本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況。"
+        }
+      ]
+    }, // 這是原本結尾的大括號
     {
       "@type": "Person",
       "@id": "https://www.weiran.tw/#doctor-wang",
