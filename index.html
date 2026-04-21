@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>王穎柔醫師｜新竹蔚然美學牙醫｜專精3D齒雕與活髓治療</title>
+<meta name="google-site-verification" content="Mjjy9eBXaZJA5lRGAgGJuBLM0YwAL2nHpNj2WUFYK_4" />
 <meta name="description" content="王穎柔醫師，前台北榮總醫師，現服務於新竹蔚然美學牙醫診所。專長為3D齒雕(陶瓷嵌體)、活髓治療與顯微根管，治療溫柔細心，過程不痛。">
 
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com" defer></script>
 
 
 <script>
@@ -76,13 +77,14 @@ tailwind.config = {
       "@id": "https://www.weiran.tw/#clinic",
       "name": "蔚然美學牙醫診所",
       "url": "https://www.weiran.tw/",
-      "telephone": "",
+      "telephone": "035426622",
       "openingHours": [],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "民權路219號",
         "addressLocality": "東區",
         "addressRegion": "新竹市",
+        "postalCode": "300",
         "addressCountry": "TW"
       },
       "sameAs": [
@@ -179,8 +181,7 @@ tailwind.config = {
 <!-- ============ HERO ============ -->
 <section class="relative overflow-hidden">
   <!-- Hero image slot -->
-  <img src="hero.jpg" alt="蔚然美學牙醫診所環境" class="w-full h-[420px] md:h-[520px] object-cover">
-  <!-- Overlay panel -->
+<img src="hero.jpg" alt="蔚然美學牙醫診所環境" class="w-full h-[420px] md:h-[520px] object-cover" loading="eager" fetchpriority="high">  <!-- Overlay panel -->
   <div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm px-6 md:px-10 py-6 md:py-8">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-4">
       <div class="fade-up delay-1">
@@ -228,7 +229,7 @@ tailwind.config = {
     <!-- Photo -->
     <div class="flex-shrink-0 flex flex-col items-center gap-3">
       <div class="w-44 h-44 rounded-full overflow-hidden flex-shrink-0">
-  <img src="doctor.jpg" alt="王穎柔醫師" class="w-full h-full object-cover">
+ <img src="doctor.jpg" alt="王穎柔醫師" class="w-full h-full object-cover" loading="lazy">
 </div>
       <p class="text-sm font-medium text-gray-800">王穎柔 醫師</p>
       <p class="text-xs text-brand-dark/60 tracking-wider">蔚然美學牙醫診所</p>
@@ -269,7 +270,7 @@ tailwind.config = {
     <div class="grid md:grid-cols-2 gap-6">
       <!-- Card 1 -->
       <article class="bg-white rounded-2xl overflow-hidden border border-gray-100">
-        <img src="treatment-inlay.jpg" alt="陶瓷嵌體3D齒雕療程" class="w-full h-48 object-cover">
+        <img src="treatment-inlay.jpg" alt="陶瓷嵌體3D齒雕療程" class="w-full h-48 object-cover" loading="lazy">
         <div class="p-6">
           <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-2">01 — 陶瓷嵌體</p>
           <h3 class="font-sans serif font-light text-xl text-gray-800 mb-1">陶瓷嵌體 / 3D齒雕</h3>
@@ -293,7 +294,7 @@ tailwind.config = {
 
       <!-- Card 2 -->
       <article class="bg-white rounded-2xl overflow-hidden border border-gray-100">
-        <img src="treatment-pulp.jpg" alt="活髓保存術療程" class="w-full h-48 object-cover">
+        <img src="treatment-pulp.jpg" alt="活髓保存術療程" class="w-full h-48 object-cover" loading="lazy">
         <div class="p-6">
           <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-2">02 — 活髓保存術</p>
           <h3 class="font-sans serif font-light text-xl text-gray-800 mb-1">活髓保存術</h3>
