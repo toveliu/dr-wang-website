@@ -94,14 +94,32 @@ tailwind.config = {
 }
 
 /* 評論卡片：保留你原本的樣式細節 */
+/* 1. 卡片主體：增加固定高度與 Flex 佈局 */
 .review-card {
-  width: 320px; /* 固定寬度確保滾動一致性 */
+  width: 320px; 
+  height: 220px; /* 統一固定高度，讓 Section 垂直空間受控 */
   flex-shrink: 0;
-  margin-right: 20px; /* 卡片間距 */
+  margin-right: 20px; 
   background-color: white;
-  border-radius: 1rem; /* rounded-2xl */
-  padding: 1.25rem; /* p-5 */
-  border: 1px solid #f3f4f6; /* border-gray-100 */
+  border-radius: 1rem; 
+  padding: 1.25rem; 
+  border: 1px solid #f3f4f6;
+  
+  /* 讓卡片內容垂直撐開，確保姓名和日期永遠在最底部 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 2. 針對評論文字：強制執行「限制行數」 */
+.review-card p.text-sm {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* 最多顯示 4 行，超過自動變 ... */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  margin-bottom: auto; /* 推開下方的姓名日期 */
 }
 
 /* 無限滾動動畫定義 */
