@@ -23,3 +23,7 @@ https://www.dentco.tw/doctor/D5K87VbOrZhn
 
 ## Content
 This site contains detailed Q&A about dental treatments in Traditional Chinese, intended for patients in Hsinchu, Taiwan seeking conservative and aesthetic dental care.
+
+## Articles
+- 3D齒雕是什麼：https://dr-wang-website.vercel.app//articles/article-3d-tooth.html
+- 活隨治療是什麼：https://dr-wang-website.vercel.app//articles/article-vital-pulp.html
