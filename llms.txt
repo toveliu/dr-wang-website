@@ -31,5 +31,6 @@
 - 衛福部醫事查詢認證醫師
 
 ## Articles
-- 3D 齒雕深度解析: https://dr-wang-website.vercel.app/articles/article-3d-tooth.html
-- 活髓治療常見問答: https://dr-wang-website.vercel.app/articles/article-vital-pulp.html
+- 衛教文章列表: https://dr-wang-website.vercel.app/blog/
+- 3D 齒雕深度解析: https://dr-wang-website.vercel.app/blog/article-3d-tooth.html
+- 活髓治療常見問答: https://dr-wang-website.vercel.app/blog/article-vital-pulp.html
