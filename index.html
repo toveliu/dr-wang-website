@@ -2,273 +2,172 @@
 <html lang="zh-TW">
 <head>
   <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0SSXLDLSE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-W0SSXLDLSE');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>王穎柔醫師｜新竹蔚然美學牙醫｜專精3D齒雕與活髓治療</title>
-<meta name="google-site-verification" content="Mjjy9eBXaZJA5lRGAgGJuBLM0YwAL2nHpNj2WUFYK_4" />
-<meta name="description" content="王穎柔醫師，前台北榮總醫師，現服務於新竹蔚然美學牙醫診所。專長為3D齒雕(陶瓷嵌體)、活髓治療與顯微根管，治療溫柔細心，過程不痛。">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          orange: '#ff7846',
-          dark: '#736e69',
-          light: '#e6e6e6',
-          bg: '#eaeaea',
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W0SSXLDLSE');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王穎柔醫師｜新竹蔚然美學牙醫｜專精3D齒雕與活髓治療</title>
+  <meta name="google-site-verification" content="Mjjy9eBXaZJA5lRGAgGJuBLM0YwAL2nHpNj2WUFYK_4" />
+  <meta name="description" content="王穎柔醫師，前台北榮總醫師，現服務於新竹蔚然美學牙醫診所。專長為3D齒雕(陶瓷嵌體)、活髓治療與顯微根管，治療溫柔細心，過程不痛。">
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            orange: '#ff7846',
+            dark: '#736e69',
+            light: '#e6e6e6',
+            bg: '#eaeaea',
+          }
+        },
+        borderRadius: {
+          '4xl': '2rem',
+          '5xl': '3rem',
         }
-      },
-      
-      borderRadius: {
-        '4xl': '2rem',
-        '5xl': '3rem',
       }
     }
   }
-}
-</script>
-
-<style>
-  html { scroll-padding-top: 80px; }
-  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-  body { font-family: 'Noto Sans TC', sans-serif; font-weight: 300; }
-  .font-serif { font-family: 'Noto Serif TC', serif; }
-
-  /* FAQ accordion */
-  .faq-item input[type="checkbox"] { display: none; }
-  .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
-  .faq-item input:checked ~ .faq-answer { max-height: 300px; }
-  .faq-item input:checked ~ label .faq-icon { transform: rotate(45deg); background-color: #ff7846; color: white; }
-  .faq-item input:checked ~ label { border-color: #ff7846; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-  .faq-item input:checked ~ label + .faq-answer { border: 1px solid #ff7846; border-top: none; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
-  .faq-icon { transition: transform 0.3s ease, background-color 0.3s ease; }
-
-  /* Photo placeholder */
-  .photo-slot {
-    background: #e8e5e1;
-    border: 2px dashed #c8c4bf;
-    display: flex; align-items: center; justify-content: center;
-    color: #a09b96; font-size: 12px; letter-spacing: 0.05em; text-align: center;
-  }
-
-  /* Fade in on load */
-  @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
-  .fade-up { animation: fadeUp 0.6s ease forwards; }
-  .delay-1 { animation-delay: 0.1s; opacity: 0; }
-  .delay-2 { animation-delay: 0.2s; opacity: 0; }
-  .delay-3 { animation-delay: 0.3s; opacity: 0; }
-
-  /* Mobile nav */
-  #mobile-menu { display: none; }
-  #mobile-menu.open { display: flex; }
-
-  /* 輪播容器：確保不超出螢幕 */
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-}
-
-/* 輪播軌道：執行水平移動動畫 */
-.marquee-content {
-  display: flex;
-  width: max-content;
-  animation: marquee-scroll 40s linear infinite; /* 速度可調：數字越大越慢 */
-}
-
-/* 滑鼠懸停時暫停動畫，方便閱讀內容 */
-.marquee-content:hover {
-  animation-play-state: paused;
-}
-
-/* 評論卡片：保留你原本的樣式細節 */
-/* 1. 卡片主體：增加固定高度與 Flex 佈局 */
-.review-card {
-  width: 320px; 
-  height: 220px; /* 統一固定高度，讓 Section 垂直空間受控 */
-  flex-shrink: 0;
-  margin-right: 20px; 
-  background-color: white;
-  border-radius: 1rem; 
-  padding: 1.25rem; 
-  border: 1px solid #f3f4f6;
-  
-  /* 讓卡片內容垂直撐開，確保姓名和日期永遠在最底部 */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* 2. 針對評論文字：強制執行「限制行數」 */
-.review-card p.text-sm {
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* 最多顯示 4 行，超過自動變 ... */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.6;
-  margin-bottom: auto; /* 推開下方的姓名日期 */
-}
-
-/* 無限滾動動畫定義 */
-@keyframes marquee-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    /* 這裡必須移動到總寬度的一半，因為我們放了兩組相同的內容 */
-    transform: translateX(-50%);
-  }
-}
-</style>
-
-<!-- Schema: Clinic + Doctor -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": ["MedicalClinic","Dentist"],
-      "@id": "https://www.weiran.tw/#clinic",
-      "name": "蔚然美學牙醫診所",
-      "url": "https://www.weiran.tw/",
-      "telephone": "035426622",
-      "openingHours": [],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "民權路219號",
-        "addressLocality": "東區",
-        "addressRegion": "新竹市",
-        "postalCode": "300",
-        "addressCountry": "TW"
-      },
-      "sameAs": [
-        "https://www.weiran.tw/",
-        "https://www.dentco.tw/doctor/D5K87VbOrZhn"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "309",
-        "bestRating": "5"
-      },
-      "medicalSpecialty": "http://schema.org/Dentistry", // 注意這裡原本的引號後要加一個「逗號」
-      "review": [
-        {
-          "@type": "Review",
-          "datePublished": "2024-04-21",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "黃o發"
-          },
-          "reviewBody": "今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。"
-        },
-        {
-          "@type": "Review",
-          "datePublished": "2024-04-20",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "王o賢"
-          },
-          "reviewBody": "王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。"
-        },
-        {
-          "@type": "Review",
-          "datePublished": "2024-04-18",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "葉o婷"
-          },
-          "reviewBody": "本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況。"
-        }
-      ]
-    }, // 這是原本結尾的大括號
-    {
-      "@type": "Person",
-      "@id": "https://www.weiran.tw/#doctor-wang",
-      "name": "王穎柔",
-      "jobTitle": "牙醫師",
-      "description": "王穎柔醫師為國立陽明大學牙醫系畢業，曾任職台北榮民總醫院口腔醫學部，現於新竹市蔚然美學牙醫診所執業，專長為3D齒雕（陶瓷嵌體）與活髓保存術。",
-      "hasCredential": [
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "學士", "recognizedBy": {"@type": "CollegeOrUniversity", "name": "國立陽明大學"}},
-        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Dentsply Sirona 顯微美學認證"}
-      ],
-      "worksFor": {"@id": "https://www.weiran.tw/#clinic"},
-      "alumniOf": {"@type": "CollegeOrUniversity", "name": "國立陽明大學牙醫系"},
-      "knowsAbout": ["3D齒雕","陶瓷嵌體","活髓治療","顯微根管治療"],
-      "sameAs": [
-        "https://www.dentco.tw/doctor/D5K87VbOrZhn",
-        "https://www.drright.me/doctor/72615/%E7%8E%8B%E7%A9%8E%E6%9F%94"
-      ]
+  </script>
+ 
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body { font-family: 'Noto Sans TC', sans-serif; font-weight: 300; }
+    .font-serif { font-family: 'Noto Serif TC', serif; }
+ 
+    .faq-item input[type="checkbox"] { display: none; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; }
+    .faq-item input:checked ~ .faq-answer { max-height: 300px; }
+    .faq-item input:checked ~ label .faq-icon { transform: rotate(45deg); background-color: #ff7846; color: white; }
+    .faq-item input:checked ~ label { border-color: #ff7846; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+    .faq-item input:checked ~ label + .faq-answer { border: 1px solid #ff7846; border-top: none; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+    .faq-icon { transition: transform 0.3s ease, background-color 0.3s ease; }
+ 
+    .photo-slot {
+      background: #e8e5e1; border: 2px dashed #c8c4bf;
+      display: flex; align-items: center; justify-content: center;
+      color: #a09b96; font-size: 12px; letter-spacing: 0.05em; text-align: center;
     }
-  ]
-}
-</script>
-
-<!-- Schema: FAQ -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type":"Question","name":"陶瓷嵌體是什麼？","acceptedAnswer":{"@type":"Answer","text":"嵌體或叫3D齒雕，是一種客製化的假牙，用在比較大的蛀牙窩洞修復。目前大都採用陶瓷的材料製作，所以又稱為「陶瓷嵌體」。除了可以有漂亮的牙齒外型跟顏色，也可以保護剩下的脆弱牙齒結構不容易斷掉。"}},
-    {"@type":"Question","name":"陶瓷嵌體跟傳統假牙有什麼不同？","acceptedAnswer":{"@type":"Answer","text":"傳統牙冠是全包覆式，需要磨除整圈牙齒。陶瓷嵌體是根據每個人牙齒窩洞形狀客製設計，只填補缺損部位，保留更多原生牙齒結構，讓未來有更多治療選擇。"}},
-    {"@type":"Question","name":"什麼是活髓治療？","acceptedAnswer":{"@type":"Answer","text":"活髓治療是用來保留牙齒神經活性的一種治療方式，是相對於根管治療來說比較保守的選擇。只移除「不健康」的牙髓，合併使用特殊生物材料保護健康的牙髓，減少不必要的結構損耗，延長牙齒使用壽命。"}},
-    {"@type":"Question","name":"每個牙齒都可以做活髓治療嗎？","acceptedAnswer":{"@type":"Answer","text":"不是，活髓治療需要有健康的牙髓才能進行。如果牙齒神經已壞死到一定程度，還是需要根管治療徹底清理細菌。"}},
-    {"@type":"Question","name":"做活髓治療就不用根管治療了嗎？","acceptedAnswer":{"@type":"Answer","text":"成功的活髓治療確實可以免去根管治療之苦。但仍有失敗的可能性，若失敗還是需要根管治療來移除感染。根管治療完成的牙齒建議製作假牙保護結構，延長使用年限。"}},
-    {"@type":"Question","name":"王穎柔醫師在哪裡看診？","acceptedAnswer":{"@type":"Answer","text":"王穎柔醫師目前於新竹市東區民權路219號蔚然美學牙醫診所執業。可透過牙醫小幫手平台線上預約看診。"}}
-  ]
-}
-</script>
+ 
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+    .fade-up { animation: fadeUp 0.6s ease forwards; }
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .delay-3 { animation-delay: 0.3s; opacity: 0; }
+ 
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: flex; }
+ 
+    .marquee-container { width: 100%; overflow: hidden; position: relative; display: flex; }
+    .marquee-content { display: flex; width: max-content; animation: marquee-scroll 40s linear infinite; }
+    .marquee-content:hover { animation-play-state: paused; }
+    .review-card {
+      width: 320px; height: 220px; flex-shrink: 0; margin-right: 20px;
+      background-color: white; border-radius: 1rem; padding: 1.25rem;
+      border: 1px solid #f3f4f6; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .review-card p.text-sm {
+      display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+      overflow: hidden; text-overflow: ellipsis; line-height: 1.6; margin-bottom: auto;
+    }
+    @keyframes marquee-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+ 
+  <!-- Schema: Clinic + Doctor -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["MedicalClinic","Dentist"],
+        "@id": "https://www.weiran.tw/#clinic",
+        "name": "蔚然美學牙醫診所",
+        "url": "https://www.weiran.tw/",
+        "telephone": "035426622",
+        "openingHours": [],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "民權路219號",
+          "addressLocality": "東區",
+          "addressRegion": "新竹市",
+          "postalCode": "300",
+          "addressCountry": "TW"
+        },
+        "sameAs": ["https://www.weiran.tw/","https://www.dentco.tw/doctor/D5K87VbOrZhn"],
+        "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","reviewCount": "309","bestRating": "5"},
+        "medicalSpecialty": "http://schema.org/Dentistry",
+        "review": [
+          {"@type":"Review","datePublished":"2024-04-21","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"黃o發"},"reviewBody":"今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。"},
+          {"@type":"Review","datePublished":"2024-04-20","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"王o賢"},"reviewBody":"王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。"},
+          {"@type":"Review","datePublished":"2024-04-18","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"葉o婷"},"reviewBody":"本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況。"}
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.weiran.tw/#doctor-wang",
+        "name": "王穎柔",
+        "jobTitle": "牙醫師",
+        "description": "王穎柔醫師為國立陽明大學牙醫系畢業，曾任職台北榮民總醫院口腔醫學部，現於新竹市蔚然美學牙醫診所執業，專長為3D齒雕（陶瓷嵌體）與活髓保存術。",
+        "hasCredential": [
+          {"@type":"EducationalOccupationalCredential","credentialCategory":"degree","educationalLevel":"學士","recognizedBy":{"@type":"CollegeOrUniversity","name":"國立陽明大學"}},
+          {"@type":"EducationalOccupationalCredential","credentialCategory":"certification","name":"Dentsply Sirona 顯微美學認證"}
+        ],
+        "worksFor": {"@id": "https://www.weiran.tw/#clinic"},
+        "alumniOf": {"@type": "CollegeOrUniversity","name": "國立陽明大學牙醫系"},
+        "knowsAbout": ["3D齒雕","陶瓷嵌體","活髓治療","顯微根管治療"],
+        "sameAs": ["https://www.dentco.tw/doctor/D5K87VbOrZhn","https://www.drright.me/doctor/72615/%E7%8E%8B%E7%A9%8E%E6%9F%94"]
+      }
+    ]
+  }
+  </script>
+ 
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"陶瓷嵌體是什麼？","acceptedAnswer":{"@type":"Answer","text":"嵌體或叫3D齒雕，是一種客製化的假牙，用在比較大的蛀牙窩洞修復。目前大都採用陶瓷的材料製作，所以又稱為「陶瓷嵌體」。除了可以有漂亮的牙齒外型跟顏色，也可以保護剩下的脆弱牙齒結構不容易斷掉。"}},
+      {"@type":"Question","name":"陶瓷嵌體跟傳統假牙有什麼不同？","acceptedAnswer":{"@type":"Answer","text":"傳統牙冠是全包覆式，需要磨除整圈牙齒。陶瓷嵌體是根據每個人牙齒窩洞形狀客製設計，只填補缺損部位，保留更多原生牙齒結構，讓未來有更多治療選擇。"}},
+      {"@type":"Question","name":"什麼是活髓治療？","acceptedAnswer":{"@type":"Answer","text":"活髓治療是用來保留牙齒神經活性的一種治療方式，是相對於根管治療來說比較保守的選擇。只移除「不健康」的牙髓，合併使用特殊生物材料保護健康的牙髓，減少不必要的結構損耗，延長牙齒使用壽命。"}},
+      {"@type":"Question","name":"每個牙齒都可以做活髓治療嗎？","acceptedAnswer":{"@type":"Answer","text":"不是，活髓治療需要有健康的牙髓才能進行。如果牙齒神經已壞死到一定程度，還是需要根管治療徹底清理細菌。"}},
+      {"@type":"Question","name":"做活髓治療就不用根管治療了嗎？","acceptedAnswer":{"@type":"Answer","text":"成功的活髓治療確實可以免去根管治療之苦。但仍有失敗的可能性，若失敗還是需要根管治療來移除感染。根管治療完成的牙齒建議製作假牙保護結構，延長使用年限。"}},
+      {"@type":"Question","name":"王穎柔醫師在哪裡看診？","acceptedAnswer":{"@type":"Answer","text":"王穎柔醫師目前於新竹市東區民權路219號蔚然美學牙醫診所執業。可透過牙醫小幫手平台線上預約看診。"}}
+    ]
+  }
+  </script>
 </head>
-
+ 
 <body class="bg-brand-bg text-brand-dark font-sans">
-
+ 
 <!-- ============ NAV ============ -->
 <header class="bg-white sticky top-0 z-50 border-b border-gray-100">
   <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <span class="font-sans serif font-light text-lg text-gray-800 tracking-wide">王穎柔醫師</span>
+    <a href="/" class="flex items-center gap-3 hover:opacity-80 transition">
+      <span class="font-sans font-light text-lg text-gray-800 tracking-wide">王穎柔醫師</span>
       <span class="text-xs bg-brand-orange text-white px-3 py-1 rounded-full tracking-wider">蔚然美學牙醫</span>
-    </div>
+    </a>
     <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-8">
       <a href="#about" class="text-sm text-gray-800 font-medium hover:text-brand-orange transition">關於醫師</a>
-      <a href="#treatments" class="text=12px text-gray-800 font-medium hover:text-brand-orange transition">專長療程</a>
-      <a href="#reviews" class="text=12px text-gray-800 font-medium hover:text-brand-orange transition">Google 評價</a>
+      <a href="#treatments" class="text-sm text-gray-800 font-medium hover:text-brand-orange transition">專長療程</a>
+      <a href="/blog/" class="text-sm text-gray-800 font-medium hover:text-brand-orange transition">衛教文章</a>
+      <a href="#reviews" class="text-sm text-gray-800 font-medium hover:text-brand-orange transition">Google 評價</a>
       <a href="#booking" class="text-sm text-gray-800 font-medium hover:text-brand-orange transition">門診資訊</a>
       <a href="https://www.dentco.tw/doctor/D5K87VbOrZhn" target="_blank"
-   class="block w-full md:w-auto text-center bg-brand-orange text-white font-bold text-base px-8 py-4 rounded-full hover:bg-orange-600 hover:-translate-y-0.5 transition duration-200"
-           onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
+         class="bg-brand-orange text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-orange-600 hover:-translate-y-0.5 transition duration-200"
+         onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
         立即預約
       </a>
     </nav>
@@ -281,40 +180,40 @@ tailwind.config = {
   </div>
   <!-- Mobile menu -->
   <div id="mobile-menu" class="flex-col gap-0 border-t border-gray-100 bg-white px-6 pb-4">
-    <a href="#about" class="py-3 text=12px text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">關於醫師</a>
-    <a href="#treatments" class="py-3 text=12px text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">專長療程</a>
+    <a href="#about" class="py-3 text-sm text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">關於醫師</a>
+    <a href="#treatments" class="py-3 text-sm text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">專長療程</a>
+    <a href="/blog/" class="py-3 text-sm text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">衛教文章</a>
     <a href="#reviews" class="py-3 text-sm text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">Google 評價</a>
-    <a href="#booking" class="py-3 text-sm text-gray-800 font-medium block hover:text-brand-orange">門診資訊</a>
+    <a href="#booking" class="py-3 text-sm text-gray-800 font-medium border-b border-gray-50 block hover:text-brand-orange">門診資訊</a>
     <a href="https://www.dentco.tw/doctor/D5K87VbOrZhn" target="_blank"
        class="mt-3 w-full text-center text-sm bg-brand-orange text-white font-medium px-6 py-3 rounded-full block hover:bg-orange-600 transition"
-         onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
+       onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
       立即預約
     </a>
   </div>
 </header>
-
+ 
 <!-- ============ HERO ============ -->
 <section class="relative overflow-hidden">
-  <!-- Hero image slot -->
-<img src="hero.jpg" alt="蔚然美學牙醫診所環境" class="w-full h-[420px] md:h-[520px] object-cover" loading="eager" fetchpriority="high">  <!-- Overlay panel -->
+  <img src="hero.jpg" alt="蔚然美學牙醫診所環境" class="w-full h-[420px] md:h-[520px] object-cover" loading="eager" fetchpriority="high">
   <div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm px-6 md:px-10 py-6 md:py-8">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-4">
       <div class="fade-up delay-1">
         <p class="text-xs tracking-widest text-brand-orange uppercase mb-2">新竹 ／ 蔚然美學牙醫診所</p>
-        <h1 class="font-sans serif font-light text-2xl md:text-3xl text-gray-800 leading-snug mb-2">
+        <h1 class="font-sans font-light text-2xl md:text-3xl text-gray-800 leading-snug mb-2">
           <span class="text-brand-orange">細膩溫柔</span>呵護您的牙齒，<br>找回笑容與信心
         </h1>
         <p class="text-sm text-brand-dark/70 max-w-md">王穎柔醫師專精 3D齒雕與活髓治療，提供您最合適的治療服務。</p>
       </div>
       <a href="https://www.dentco.tw/doctor/D5K87VbOrZhn" target="_blank"
          class="fade-up delay-2 flex-shrink-0 bg-brand-orange text-white text-sm font-medium px-8 py-3 rounded-full hover:bg-orange-600 hover:-translate-y-0.5 transition duration-200 text-center"
-           onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
+         onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
         立即預約 →
       </a>
     </div>
   </div>
 </section>
-
+ 
 <!-- ============ TRUST BAR ============ -->
 <section class="bg-brand-bg border-b border-gray-200">
   <div class="max-w-5xl mx-auto px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x md:divide-gray-200">
@@ -325,15 +224,10 @@ tailwind.config = {
     <div class="px-0 md:px-6">
       <p class="text-[12px] tracking-widest text-brand-dark/100 uppercase mb-1">擅長治療</p>
       <p class="text-xs text-brand-orange font-medium">3D 齒雕（陶瓷嵌體）</p>
-    <li class="flex items-center gap-2">
-     <p class="text-xs text-brand-orange font-medium">活隨保存數</p>
-    <li class="flex items-center gap-2">
+      <p class="text-xs text-brand-orange font-medium">活髓保存術</p>
       <p class="text-xs text-brand-orange font-medium">微創齒雕修復</p>
-    <li class="flex items-center gap-2">
       <p class="text-xs text-brand-orange font-medium">全瓷冠修復</p>
-    <li class="flex items-center gap-2">
       <p class="text-xs text-brand-orange font-medium">牙周、根管治療</p>
-    <li class="flex items-center gap-2">
     </div>
     <div class="px-0 md:px-6">
       <p class="text-[12px] tracking-widest text-brand-dark/100 uppercase mb-1">衛福部登記</p>
@@ -342,30 +236,27 @@ tailwind.config = {
     </div>
     <div class="px-0 md:px-6 md:last:pr-0">
       <p class="text-[12px] tracking-widest text-brand-dark/100 uppercase mb-1">患者評價</p>
-     <div class="flex flex-col gap-2">
-  <a href="https://www.dentco.tw/doctor/D5K87VbOrZhn" target="_blank"
-     class="text-xs text-brand-dark/100 hover:text-brand-orange transition">牙醫小幫手 評價 5/5 ↗</a>
-  <a href="https://www.drright.me/doctor/72615/%E7%8E%8B%E7%A9%8E%E6%9F%94" target="_blank"
-     class="text-xs text-brand-dark/100 hover:text-brand-orange transition">Dr.Right 評價 5/5 ↗</a>
+      <div class="flex flex-col gap-2">
+        <a href="https://www.dentco.tw/doctor/D5K87VbOrZhn" target="_blank" class="text-xs text-brand-dark/100 hover:text-brand-orange transition">牙醫小幫手 評價 5/5 ↗</a>
+        <a href="https://www.drright.me/doctor/72615/%E7%8E%8B%E7%A9%8E%E6%9F%94" target="_blank" class="text-xs text-brand-dark/100 hover:text-brand-orange transition">Dr.Right 評價 5/5 ↗</a>
+      </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- ============ ABOUT ============ -->
 <section id="about" class="bg-white py-16 md:py-20">
   <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-12 md:gap-16 items-center">
-    <!-- Photo -->
     <div class="flex-shrink-0 flex flex-col items-center gap-3">
       <div class="w-44 h-44 rounded-full overflow-hidden flex-shrink-0">
- <img src="doctor.jpg" alt="王穎柔醫師" class="w-full h-full object-cover" loading="lazy">
-</div>
+        <img src="doctor.jpg" alt="王穎柔醫師" class="w-full h-full object-cover" loading="lazy">
+      </div>
       <p class="text-sm font-medium text-gray-800">王穎柔 醫師</p>
       <p class="text-xs text-brand-dark/60 tracking-wider">蔚然美學牙醫診所</p>
     </div>
-    <!-- Content -->
     <div class="flex-1">
       <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-3">關於醫師 — About</p>
-      <h2 class="font-sans serif font-light text-2xl md:text-3xl text-gray-800 mb-4 leading-snug">
+      <h2 class="font-sans font-light text-2xl md:text-3xl text-gray-800 mb-4 leading-snug">
         以「保留真牙」為核心，<br>微創修復每一顆牙齒
       </h2>
       <p class="text-sm text-brand-dark/75 leading-loose mb-6">
@@ -388,73 +279,62 @@ tailwind.config = {
     </div>
   </div>
 </section>
-
+ 
 <!-- ============ TREATMENTS ============ -->
 <section id="treatments" class="bg-brand-bg py-16 md:py-20">
   <div class="max-w-5xl mx-auto px-6">
     <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-3 text-center">專長療程</p>
-    <h2 class="font-sans serif font-light text-2xl md:text-3xl text-gray-800 text-center mb-10">兩項核心專長，保留更多牙齒資本</h2>
-
+    <h2 class="font-sans font-light text-2xl md:text-3xl text-gray-800 text-center mb-10">兩項核心專長，保留更多牙齒資本</h2>
     <div class="grid md:grid-cols-2 gap-6">
-      <!-- Card 1 -->
       <article class="bg-white rounded-2xl overflow-hidden border border-gray-100">
         <img src="treatment-inlay.jpg" alt="陶瓷嵌體3D齒雕療程" class="w-full h-48 object-cover" loading="lazy">
         <div class="p-6">
           <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-2">01 — 陶瓷嵌體</p>
-          <h3 class="font-sans serif font-light text-xl text-gray-800 mb-1">陶瓷嵌體 / 3D齒雕</h3>
-          <p class="text=12px text-brand-dark/50 mb-4 tracking-wider">Ceramic Inlay</p>
+          <h3 class="font-sans font-light text-xl text-gray-800 mb-1">陶瓷嵌體 / 3D齒雕</h3>
+          <p class="text-xs text-brand-dark/50 mb-4 tracking-wider">Ceramic Inlay</p>
           <div class="space-y-4 border-t border-gray-100 pt-4">
             <div>
               <p class="text-xs font-medium text-gray-800 mb-1.5 flex gap-2"><span class="text-brand-orange">Q</span> 陶瓷嵌體是什麼？</p>
-              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100">
-                <strong class="text-gray-700">嵌體是客製化假牙，用於大面積蛀牙修復。</strong>採用陶瓷材料製作，兼顧美觀與保護脆弱牙齒結構，防止斷裂。
-              </p>
+              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100"><strong class="text-gray-700">嵌體是客製化假牙，用於大面積蛀牙修復。</strong>採用陶瓷材料製作，兼顧美觀與保護脆弱牙齒結構，防止斷裂。</p>
             </div>
             <div>
               <p class="text-xs font-medium text-gray-800 mb-1.5 flex gap-2"><span class="text-brand-orange">Q</span> 跟傳統假牙有什麼不同？</p>
-              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100">
-                傳統牙冠需磨除整圈牙齒。<strong class="text-gray-700">陶瓷嵌體只填補缺損部位，保留更多原生牙齒結構</strong>，讓未來有更多治療選擇。
-              </p>
+              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100">傳統牙冠需磨除整圈牙齒。<strong class="text-gray-700">陶瓷嵌體只填補缺損部位，保留更多原生牙齒結構</strong>，讓未來有更多治療選擇。</p>
             </div>
           </div>
+          <a href="/blog/article-3d-tooth.html" class="mt-5 inline-flex items-center gap-1 text-xs text-brand-orange font-medium hover:underline">深入了解陶瓷嵌體 →</a>
         </div>
       </article>
-
-      <!-- Card 2 -->
+ 
       <article class="bg-white rounded-2xl overflow-hidden border border-gray-100">
         <img src="treatment-pulp.jpg" alt="活髓保存術療程" class="w-full h-48 object-cover" loading="lazy">
         <div class="p-6">
           <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-2">02 — 活髓保存術</p>
-          <h3 class="font-sans serif font-light text-xl text-gray-800 mb-1">活髓保存術</h3>
+          <h3 class="font-sans font-light text-xl text-gray-800 mb-1">活髓保存術</h3>
           <p class="text-xs text-brand-dark/50 mb-4 tracking-wider">Vital Pulp Therapy</p>
           <div class="space-y-4 border-t border-gray-100 pt-4">
             <div>
               <p class="text-xs font-medium text-gray-800 mb-1.5 flex gap-2"><span class="text-brand-orange">Q</span> 什麼是活髓治療？</p>
-              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100">
-                <strong class="text-gray-700">保留牙神經活性，是比根管治療更保守的選擇。</strong>只移除不健康牙髓，搭配生物材料保護健康部分，延長牙齒壽命。
-              </p>
+              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100"><strong class="text-gray-700">保留牙神經活性，是比根管治療更保守的選擇。</strong>只移除不健康牙髓，搭配生物材料保護健康部分，延長牙齒壽命。</p>
             </div>
             <div>
               <p class="text-xs font-medium text-gray-800 mb-1.5 flex gap-2"><span class="text-brand-orange">Q</span> 做了就不用根管治療了嗎？</p>
-              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100">
-                成功的話可免去根管治療。<strong class="text-gray-700">但仍有失敗可能，失敗時仍需根管治療清除感染。</strong>建議由醫師評估後決定。
-              </p>
+              <p class="text-xs text-brand-dark/70 leading-loose pl-4 border-l-2 border-gray-100">成功的話可免去根管治療。<strong class="text-gray-700">但仍有失敗可能，失敗時仍需根管治療清除感染。</strong>建議由醫師評估後決定。</p>
             </div>
           </div>
+          <a href="/blog/article-vital-pulp.html" class="mt-5 inline-flex items-center gap-1 text-xs text-brand-orange font-medium hover:underline">深入了解活髓保存術 →</a>
         </div>
       </article>
     </div>
   </div>
 </section>
-
+ 
 <!-- ============ FAQ ============ -->
 <section class="bg-white py-16 md:py-20">
   <div class="max-w-3xl mx-auto px-6">
     <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-3 text-center">常見問題</p>
-    <h2 class="font-sans serif font-light text-2xl text-gray-800 text-center mb-10">患者最常詢問的問題</h2>
-
+    <h2 class="font-sans font-light text-2xl text-gray-800 text-center mb-10">患者最常詢問的問題</h2>
     <div class="space-y-3">
-
       <div class="faq-item">
         <input type="checkbox" id="faq1">
         <label for="faq1" class="flex items-center justify-between cursor-pointer border border-gray-200 rounded-xl px-5 py-4 hover:border-brand-orange transition">
@@ -462,12 +342,9 @@ tailwind.config = {
           <span class="faq-icon w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center text-gray-400 text-base flex-shrink-0 ml-4">+</span>
         </label>
         <div class="faq-answer bg-brand-bg px-5 py-0">
-          <p class="text-sm text-brand-dark/100 leading-loose py-4">
-            一般補牙使用複合樹脂直接填補，適合小洞。陶瓷嵌體是在牙科技工所客製化製作，強度更高、密合度更好，適合中大型蛀牙窩洞，能更有效保護剩餘牙齒結構。
-          </p>
+          <p class="text-sm text-brand-dark/100 leading-loose py-4">一般補牙使用複合樹脂直接填補，適合小洞。陶瓷嵌體是在牙科技工所客製化製作，強度更高、密合度更好，適合中大型蛀牙窩洞，能更有效保護剩餘牙齒結構。</p>
         </div>
       </div>
-
       <div class="faq-item">
         <input type="checkbox" id="faq2">
         <label for="faq2" class="flex items-center justify-between cursor-pointer border border-gray-200 rounded-xl px-5 py-4 hover:border-brand-orange transition">
@@ -475,12 +352,9 @@ tailwind.config = {
           <span class="faq-icon w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center text-gray-400 text-base flex-shrink-0 ml-4">+</span>
         </label>
         <div class="faq-answer bg-brand-bg px-5 py-0">
-          <p class="text-sm text-brand-dark/100 leading-loose py-4">
-            根據臨床研究，在正確適應症下活髓治療的成功率相當高。成功關鍵在於：牙髓的健康狀態、使用的生物材料，以及術後牙齒的完整修復。王穎柔醫師會在診斷後評估是否適合進行。
-          </p>
+          <p class="text-sm text-brand-dark/100 leading-loose py-4">根據臨床研究，在正確適應症下活髓治療的成功率相當高。成功關鍵在於：牙髓的健康狀態、使用的生物材料，以及術後牙齒的完整修復。王穎柔醫師會在診斷後評估是否適合進行。</p>
         </div>
       </div>
-
       <div class="faq-item">
         <input type="checkbox" id="faq3">
         <label for="faq3" class="flex items-center justify-between cursor-pointer border border-gray-200 rounded-xl px-5 py-4 hover:border-brand-orange transition">
@@ -488,12 +362,9 @@ tailwind.config = {
           <span class="faq-icon w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center text-gray-400 text-base flex-shrink-0 ml-4">+</span>
         </label>
         <div class="faq-answer bg-brand-bg px-5 py-0">
-          <p class="text-sm text-brand-dark/100 leading-loose py-4">
-            陶瓷嵌體為自費療程，健保目前不給付。費用依窩洞大小、牙位及材料有所不同，建議來診諮詢後由醫師提供詳細報價。
-          </p>
+          <p class="text-sm text-brand-dark/100 leading-loose py-4">陶瓷嵌體為自費療程，健保目前不給付。費用依窩洞大小、牙位及材料有所不同，建議來診諮詢後由醫師提供詳細報價。</p>
         </div>
       </div>
-
       <div class="faq-item">
         <input type="checkbox" id="faq4">
         <label for="faq4" class="flex items-center justify-between cursor-pointer border border-gray-200 rounded-xl px-5 py-4 hover:border-brand-orange transition">
@@ -501,123 +372,81 @@ tailwind.config = {
           <span class="faq-icon w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center text-gray-400 text-base flex-shrink-0 ml-4">+</span>
         </label>
         <div class="faq-answer bg-brand-bg px-5 py-0">
-          <p class="text-sm text-brand-dark/100 leading-loose py-4">
-            初診請攜帶健保卡，並提前告知目前服用藥物、過敏史，或之前的牙科治療紀錄。建議事先透過牙醫小幫手線上預約，避免等候時間。
-          </p>
+          <p class="text-sm text-brand-dark/100 leading-loose py-4">初診請攜帶健保卡，並提前告知目前服用藥物、過敏史，或之前的牙科治療紀錄。建議事先透過牙醫小幫手線上預約，避免等候時間。</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
+ 
 <!-- ============ REVIEWS ============ -->
 <section id="reviews" class="bg-brand-bg py-16 md:py-20 overflow-hidden">
   <div class="max-w-5xl mx-auto px-6 mb-10">
     <p class="text-[12px] tracking-widest text-brand-orange uppercase mb-3 text-center">Google 評價</p>
-    <h2 class="font-sans serif font-light text-2xl text-gray-800 text-center">客戶真實回饋</h2>
+    <h2 class="font-sans font-light text-2xl text-gray-800 text-center">客戶真實回饋</h2>
   </div>
-
   <div class="marquee-container">
     <div class="marquee-content">
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「看診第二次才來評價 直接愛上王醫師😍 王醫師超級溫柔細心❤️ 我是看牙齒超級容易緊張的人 加上我是長期蛀牙補了又蛀，蛀了又補的人 王醫師在打麻藥 或是治療過程中捕捉到我有小動作或微表情 都能被王精準catch 到問我還好嗎😭❤️ 確定我沒事才繼續療程 而且蛀牙在鑽的時候剛好治療的那顆牙齒很敏感 王醫師發現我對某個鑽頭沒辦法接受 會馬上更換成比較小的鑽頭，讓我痛感比較低 過程中也會很耐心的解說讓我了解自己的狀況 還有拿鏡子讓我看自己的牙齒哪裡有蛀牙 過往看牙醫都是會感覺很急著要結束療程 這邊完全不會！！就是很輕鬆自在的看牙～ 診間也有各種小玩具可以捏（？） 算是很貼心的設計😂 治療結束後也會細心打磨牙齒！！ 讓咬合與外觀不會怪怪的 （之前有遇過其他間牙醫醫師治療完不打磨，導致凸一塊然後卡黑黑的🥲） 很開心能在@上偶然知道這間牙醫！❤️」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— 六o柒</p>
-      </div>
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫生很有耐心的答覆，體貼病人願花時間回答，讓病人感受被重視，這次洗牙是經驗值中最好的1次，看牙恐懼減輕，王醫生值得推薦。」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— Eoh</p>
-      </div>
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況，讓我慢慢能接受了！」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— 葉o婷</p>
-      </div>
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「這次是洗牙+檢查，發現一個蛀牙馬上補了 王穎柔醫師很細心很溫柔！！謝謝王醫師💗 櫃檯姐姐也很溫柔，二樓等候區看起來很漂亮很安心，甚至有不舒服舉什麼手勢的教學，診間隔間隱私做的很好 新竹人真的都應該來這間看牙！」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— You</p>
-      </div>
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— 黃o發</p>
-      </div>
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— 王o賢</p>
-      </div>
-      <div class="review-card">
-        <div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div>
-        <p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫師看診很細心～」</p>
-        <p class="text-xs text-brand-dark/80 font-medium">— 傅o婕</p>
-      </div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「看診第二次才來評價 直接愛上王醫師😍 王醫師超級溫柔細心❤️ 我是看牙齒超級容易緊張的人 加上我是長期蛀牙補了又蛀，蛀了又補的人 王醫師在打麻藥 或是治療過程中捕捉到我有小動作或微表情 都能被王精準catch 到問我還好嗎😭❤️」</p><p class="text-xs text-brand-dark/80 font-medium">— 六o柒</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫生很有耐心的答覆，體貼病人願花時間回答，讓病人感受被重視，這次洗牙是經驗值中最好的1次，看牙恐懼減輕，王醫生值得推薦。」</p><p class="text-xs text-brand-dark/80 font-medium">— Eoh</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況，讓我慢慢能接受了！」</p><p class="text-xs text-brand-dark/80 font-medium">— 葉o婷</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「這次是洗牙+檢查，發現一個蛀牙馬上補了 王穎柔醫師很細心很溫柔！！謝謝王醫師💗 新竹人真的都應該來這間看牙！」</p><p class="text-xs text-brand-dark/80 font-medium">— You</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。」</p><p class="text-xs text-brand-dark/80 font-medium">— 黃o發</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。」</p><p class="text-xs text-brand-dark/80 font-medium">— 王o賢</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫師看診很細心～」</p><p class="text-xs text-brand-dark/80 font-medium">— 傅o婕</p></div>
+      <!-- duplicate for infinite loop -->
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「看診第二次才來評價 直接愛上王醫師😍 王醫師超級溫柔細心❤️ 我是看牙齒超級容易緊張的人 加上我是長期蛀牙補了又蛀，蛀了又補的人 王醫師在打麻藥 或是治療過程中捕捉到我有小動作或微表情 都能被王精準catch 到問我還好嗎😭❤️」</p><p class="text-xs text-brand-dark/80 font-medium">— 六o柒</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫生很有耐心的答覆，體貼病人願花時間回答，讓病人感受被重視，這次洗牙是經驗值中最好的1次，看牙恐懼減輕，王醫生值得推薦。」</p><p class="text-xs text-brand-dark/80 font-medium">— Eoh</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「本人很怕看牙醫！經過推薦嘗試看看蔚然牙醫！王醫生詳細解說，溫柔問診及看診，時時關心我的狀況，讓我慢慢能接受了！」</p><p class="text-xs text-brand-dark/80 font-medium">— 葉o婷</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「這次是洗牙+檢查，發現一個蛀牙馬上補了 王穎柔醫師很細心很溫柔！！謝謝王醫師💗 新竹人真的都應該來這間看牙！」</p><p class="text-xs text-brand-dark/80 font-medium">— You</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「今日是第一次給王醫師看診，非常感謝王醫師很細心和耐心親切的和我說明牙齒的問題及後續建議治療方針，讓我能在放鬆的狀態下去治療。」</p><p class="text-xs text-brand-dark/80 font-medium">— 黃o發</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「王醫師技術好！過程很俐落一邊治療一邊講解，對於生活中保養牙齒也提供很實用的建議。」</p><p class="text-xs text-brand-dark/80 font-medium">— 王o賢</p></div>
+      <div class="review-card"><div class="flex items-center gap-1 mb-3"><span class="text-brand-orange text-sm">★★★★★</span></div><p class="text-sm text-brand-dark/100 leading-loose mb-4">「醫師看診很細心～」</p><p class="text-xs text-brand-dark/80 font-medium">— 傅o婕</p></div>
     </div>
   </div>
 </section>
-
+ 
 <!-- ============ FOOTER / BOOKING ============ -->
 <footer id="booking" class="bg-brand-dark text-white py-16 mt-12 rounded-t-[3rem]">
   <div class="max-w-5xl mx-auto px-6">
     <div class="flex flex-col md:flex-row gap-12">
-
-      <!-- 左欄 -->
       <div class="flex-1 min-w-0">
         <h3 class="text-xl font-bold text-brand-orange mb-6">看診地點：蔚然美學牙醫診所</h3>
         <div class="space-y-4 text-white/70 mb-6">
-          <p class="flex items-center gap-3">
-            <span class="text-base">📍</span>
-            新竹市東區民權路219號
-          </p>
-          <p class="flex items-center gap-3">
-            <span class="text-base">🔗</span>
-            <a href="https://www.weiran.tw/" target="_blank" class="hover:text-brand-orange underline transition">www.weiran.tw</a>
-          </p>
+          <p class="flex items-center gap-3"><span class="text-base">📍</span>新竹市東區民權路219號</p>
+          <p class="flex items-center gap-3"><span class="text-base">🔗</span><a href="https://www.weiran.tw/" target="_blank" class="hover:text-brand-orange underline transition">www.weiran.tw</a></p>
         </div>
         <div class="w-full rounded-2xl overflow-hidden border border-white/10">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.556029308703!2d120.97292290000001!3d24.810651699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468357dd85cc775%3A0xb341770dd61b5fb6!2z6JSa54S2576O5a2454mZ6Yar6Ki65omA!5e0!3m2!1sen!2stw!4v1776684582417!5m2!1sen!2stw"
-            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.556029308703!2d120.97292290000001!3d24.810651699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468357dd85cc775%3A0xb341770dd61b5fb6!2z6JSa54S2576O5a2454mZ6Yar6Ki65omA!5e0!3m2!1sen!2stw!4v1776684582417!5m2!1sen!2stw" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <p class="text-xs mt-5 text-white/40 border-t border-white/10 pt-4">
-    ※ 實際門診時間請以診所預約系統或公告為主。
-    <br>
-    © 2026 王穎柔醫師｜蔚然美學牙醫診所 版權所有
-</p>
+          ※ 實際門診時間請以診所預約系統或公告為主。<br>
+          © 2026 王穎柔醫師｜蔚然美學牙醫診所 版權所有
+        </p>
       </div>
-
-      <!-- 右欄 -->
       <div class="flex-1 min-w-0 flex flex-col gap-6 md:items-end md:text-right">
         <div>
           <a href="https://www.dentco.tw/doctor/D5K87VbOrZhn" target="_blank"
              class="block w-full text-center bg-brand-orange text-white font-bold text-base px-8 py-4 rounded-full hover:bg-orange-600 hover:-translate-y-0.5 transition duration-200"
-               onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
+             onclick="gtag('event', 'click_booking', {'event_category': 'CTA', 'event_label': '牙醫小幫手預約'})">
             前往牙醫小幫手預約看診
           </a>
         </div>
         <div class="flex flex-wrap gap-4 pt-2 md:justify-end">
-          <a href="https://www.drright.me/doctor/72615/%E7%8E%8B%E7%A9%8E%E6%9F%94" target="_blank"
-             class="flex items-center gap-2 text-white/50 hover:text-white transition text-sm">
+          <a href="https://www.drright.me/doctor/72615/%E7%8E%8B%E7%A9%8E%E6%9F%94" target="_blank" class="flex items-center gap-2 text-white/50 hover:text-white transition text-sm">
             <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             Dr.Right 評價
           </a>
-          <a href="https://www.threads.com/@dr.jingo/post/DVPp-lKgQ-p" target="_blank"
-             class="flex items-center gap-2 text-white/50 hover:text-white transition text-sm">
+          <a href="https://www.threads.com/@dr.jingo/post/DVPp-lKgQ-p" target="_blank" class="flex items-center gap-2 text-white/50 hover:text-white transition text-sm">
             <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
             Threads 交流
           </a>
         </div>
-        
-        </div>
       </div>
-
     </div>
   </div>
 </footer>
+ 
 <script>
   document.querySelectorAll('#mobile-menu a').forEach(function(link) {
     link.addEventListener('click', function() {
